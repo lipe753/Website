@@ -1,3 +1,8 @@
+:root{
+    --primary-color: #04060f;
+    --sec-color:#03353e;
+    --gap:3rem;
+}
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +14,8 @@ html{
 }
 body{
     font-family: 'Open Sans', sans-serif;
+    color:var(--primary-color);
+    font-size: 2rem;
 }
 h1,h2,h3,h4,h5,h6{
     font-family: 'Montserrat', sans-serif;
@@ -31,3 +38,58 @@ h5{
 h6{
     font-size: 3.5rem;
     }
+.main-bg{
+    background-image: url('../img/main-bg.svg');
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    
+}
+.main-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--gap);
+    
+}
+
+.section{
+    min-height: 100vh;
+
+}
+.sec-bg{
+    background-color: var(--sec-color);
+    color: white;
+}
+
+.menu{
+    background-color: var(--primary-color);
+    position: fixed;
+    color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.menu-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu nav{
+    list-style: none;
+    display: flex;
+}
+
+.menu nav li a{
+    display: block;
+}
+.menu h1{
+    font-size: 2.3rem;
+    color: var(--sec-color);
+}
+.menu h1 a{
+    color: inherit;
+}
+a{
+    text-decoration: none;
+}
