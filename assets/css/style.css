@@ -1,6 +1,7 @@
 :root{
-    --primary-color: #04060f;
-    --sec-color:#03353e;
+    --primary-color: #adeada;
+    --sec-color:#edeade;
+    --light-grey-color: #EEEEEE;
     --gap:3rem;
 }
 *{
@@ -21,6 +22,7 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Montserrat', sans-serif;
 }
 h1{   
+    text-transform: uppercase;
     font-size: 6rem;
     }
 h2{
@@ -68,28 +70,60 @@ h6{
     top: 0;
     left: 0;
     width: 100%;
+    border-bottom: 1px solid var(--light-grey-color);
 }
 
 .menu-content{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
-.menu nav{
+.menu ul{
     list-style: none;
     display: flex;
 }
-
-.menu nav li a{
+.menu ul li a{
     display: block;
+    padding: 2rem;
+    text-shadow: 0.1rem 0.1rem 0.1rem black;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--sec-color);
+    position: relative;
+    
 }
 .menu h1{
-    font-size: 2.3rem;
+    text-shadow: 0.1rem 0.1rem 0.1rem black;
+    font-size: 4rem;
     color: var(--sec-color);
 }
 .menu h1 a{
     color: inherit;
 }
 a{
+    
     text-decoration: none;
+}
+.menu ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: 1.4rem;
+    left: 1.5rem;
+    width: 0;
+    height: 0.2rem;
+    background-color: var(--sec-color);
+    transition: all 300ms ease-in-out;
+}
+.menu ul li a:hover::after{
+    content: '';
+    position: absolute;
+    bottom: 1.4rem;
+    left: 1.5rem;
+    width: 80%;
+    height: 0.2rem;
+    background-color: var(--sec-color);
+    transition: all 300ms ease-in-out;
 }
