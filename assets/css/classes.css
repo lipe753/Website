@@ -1,0 +1,43 @@
+.menu-space{
+    height: 65px;
+}
+.main-bg{
+    background-color: var(--terc-color);
+    color: black;
+    min-height: 100vh;
+    border-bottom: 0.1rem solid var(--light-grey-color);
+    
+}
+.main-content{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: var(--gap);
+    
+}
+
+.sec-bg{
+    background-color: var(--sec-color);
+    color: black;
+    min-height: 100vh;
+}
+
+.intro-img{
+    background-image: url(../img/study.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.intro-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap);
+
+}
+
+.intro-text{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+
